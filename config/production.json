@@ -1,0 +1,18 @@
+{
+    "network": {
+      "mainnet": {
+        "rpcUrl": "https://mainnet.infura.io/v3/YOUR_PRODUCTION_INFURA_PROJECT_ID",
+        "chainId": 1,
+        "explorerUrl": "https://etherscan.io"
+      },
+      "polygon": {
+        "rpcUrl": "https://polygon-rpc.com",
+        "chainId": 137,
+        "explorerUrl": "https://polygonscan.com"
+      }
+    },
+    "gasPrice": "auto",
+    "gasLimit": 3000000,
+    "etherscanApiKey": "YOUR_PRODUCTION_ETHERSCAN_API_KEY",
+    "mnemonic": "YOUR_PRODUCTION_MNEMONIC"
+  }

@@ -1,0 +1,18 @@
+{
+    "network": {
+      "mainnet": {
+        "rpcUrl": "https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID",
+        "chainId": 1,
+        "explorerUrl": "https://etherscan.io"
+      },
+      "goerli": {
+        "rpcUrl": "https://goerli.infura.io/v3/YOUR_INFURA_PROJECT_ID",
+        "chainId": 5,
+        "explorerUrl": "https://goerli.etherscan.io"
+      }
+    },
+    "gasPrice": "auto",
+    "gasLimit": 3000000,
+    "etherscanApiKey": "YOUR_ETHERSCAN_API_KEY",
+    "mnemonic": "YOUR_DEVELOPMENT_MNEMONIC"
+  }

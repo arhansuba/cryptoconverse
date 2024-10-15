@@ -1,0 +1,54 @@
+# GPU configuration for AI model training and inference
+
+version: 1.0
+
+# Specify the required GPU resources
+resources:
+  gpu:
+    count: 1  # Number of GPUs required
+    type: "nvidia-tesla-t4"  # GPU type (change as needed)
+
+# Environment setup
+environment:
+  pytorch:
+    version: "1.9.0"
+  tensorflow:
+    version: "2.6.0"
+  cuda:
+    version: "11.3"
+
+# Data paths
+data:
+  training: "/path/to/training/data"
+  validation: "/path/to/validation/data"
+
+# Model configuration
+model:
+  name: "crypto_predictor"
+  type: "transformer"
+  params:
+    hidden_size: 768
+    num_layers: 12
+    num_heads: 12
+
+# Training configuration
+training:
+  batch_size: 32
+  epochs: 100
+  learning_rate: 0.0001
+  optimizer: "adam"
+
+# Inference configuration
+inference:
+  batch_size: 16
+  quantization: false
+
+# Logging and monitoring
+logging:
+  level: "INFO"
+  tensorboard: true
+
+# Distributed training settings (if applicable)
+distributed:
+  enabled: false
+  backend: "nccl"

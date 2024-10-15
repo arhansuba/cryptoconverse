@@ -1,0 +1,67 @@
+# Dependency directories
+node_modules/
+packages/*/node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Hardhat files
+cache/
+artifacts/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Config files with sensitive information
+config/*.local.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea
+.vscode
+*.swp
+*.swo
+
+# Hardhat coverage directory
+coverage
+coverage.json
+
+# Deployment files
+deployments/
+
+# TypeScript compilation output
+*.tsbuildinfo
+
+# Solidity compiler output
+*.abi
+*.bin
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Miscellaneous
+*.bak
+*.tmp
+*.temp
